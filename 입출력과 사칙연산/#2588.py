@@ -1,0 +1,7 @@
+A = int(input())
+B = input()
+ans1 = A*int(B[2])
+ans2 = A*int(B[1])
+ans3 = A*int(B[0])
+ans4 = A * int(B)
+print(ans1,ans2,ans3,ans4,sep='\n')
