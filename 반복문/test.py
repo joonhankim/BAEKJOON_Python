@@ -1,13 +1,22 @@
-import sys
-import random
-N,X= 10,5
+# import sys
 
-number_list = list(range(1,N+1))
-random.shuffle(number_list)
+# N = 26
 
-result = list()
-for num in number_list:
-    if num < X :
-        result.append(num)
 
-print(result)
+# i = 0
+# while True:
+#     ten_N = N // 10 
+#     one_N = N % 10 
+#     if (ten_N + one_N) // 10 == 0:
+#         new = one_N * 10 + one_N
+#         print("yes",new)
+#     else:
+#         sum_N = (ten_N + one_N) % 10
+#         new = one_N * 10 + sum_N
+#         print("no",new)
+#     i+=1
+#     if new == N :
+#         print(i)
+#         break
+#     else:
+#         N = new
