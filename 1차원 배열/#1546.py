@@ -5,3 +5,14 @@
 
 # 세준이의 성적을 위의 방법대로 새로 계산했을 때, 새로운 평균을 구하는 프로그램을 작성하시오.
 
+N = int(input())
+
+score_list = list(map(int,input().split()))
+
+max_score = max(score_list)
+
+for i in range(N):
+    score_list[i] = score_list[i]/max_score*100
+
+final_score = sum(score_list)/len(score_list)
+print("%.2f" %final_score)
