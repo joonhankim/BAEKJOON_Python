@@ -2,21 +2,16 @@ import sys
 
 N = int(sys.stdin.readline())
 
-i = 0
+check = N
+new_N = 0
+temp = 0
+count = 0
+
 while True:
-    ten_N = N // 10 
-    one_N = N % 10 
-    if (ten_N + one_N) // 10 == 0:
-        new = one_N * 10 + one_N
-        
-    else:
-        sum_N = (ten_N + one_N) % 10
-        new = one_N * 10 + sum_N
-        
-    i+=1
-    if new == N :
-        print(i)
+    temp = (N//10) + (N%10)
+    new_N = (N%10)*10 + temp%10
+    count += 1
+    N = new_N
+    if new_N == check:
         break
-    else:
-        N = new
-#아직 진행중..;;;;;
+print(count)
