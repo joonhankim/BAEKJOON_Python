@@ -6,3 +6,5 @@ if B>=C:
     print(-1)
 else:
     print(int(A/(C-B)+1))
+
+# C*N = A + B*N
