@@ -12,4 +12,5 @@ for num in nums:
                 bug += 1  
         if bug == 0:
             sosu_count += 1  
+
 print(sosu_count)
