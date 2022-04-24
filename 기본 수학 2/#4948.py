@@ -7,7 +7,7 @@
 import math
 
 def sosu(num:int):
-    a = math.sqrt(num)
+    a = int(math.sqrt(num))
     if num == 1:
         return False
     else:
