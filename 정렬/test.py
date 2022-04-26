@@ -1,6 +1,10 @@
-num_list = [0] * 10
+# n = 61423
 
-num_list[5] = num_list[5]+1
-num_list[5] = num_list[5]+1
+# num_list = []
 
-print(num_list)
+# for chr in str(n):
+#     num_list.append(int(chr))
+
+# num_list.sort(reverse=True)
+
+# print(''.join(map(str, num_list)))
