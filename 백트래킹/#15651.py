@@ -1,4 +1,4 @@
-#n과 m(1)
+#n과m(3)
 
 n,m = list(map(int,input().split()))
 s = []
@@ -8,10 +8,7 @@ def dfs():
         return
     
     for i in range(1,n+1):
-        if i not in s:
-            s.append(i)
-            dfs()
-            s.pop()
+        s.append(i)
+        dfs()
+        s.pop()
 dfs()
-
-
