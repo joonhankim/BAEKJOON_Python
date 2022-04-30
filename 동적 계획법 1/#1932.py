@@ -11,7 +11,7 @@ for _ in range(n):
 
 
 for i in range(1,n):
-  for j in range(len(dp[i])):
+  for j in range(0,i+1):
     if j==0:
       dp[i][j]+=(dp[i-1][j])
     elif i == j: 
