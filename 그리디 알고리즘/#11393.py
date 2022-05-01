@@ -4,7 +4,7 @@
 N = int(input())
 people = list(map(int, input().split()))
 
-people.sort(reverse=True)
+people.sort()
 
 answerM = 0
 
