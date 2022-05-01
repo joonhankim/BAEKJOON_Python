@@ -1,5 +1,6 @@
 #색종이 만들기 문제
 #분할 정복(쿼드트리)
+#재귀함수 사용 + 조건 걸리면 4분기
 
 import sys
 n=int(sys.stdin.readline())
@@ -11,7 +12,7 @@ for _ in range(n):
 white = 0
 blue = 0
 
-#x,y좌표 그리고 한변의 길이
+#함수 파라미터: x,y좌표 그리고 한변의 길이
 def cut(x,y,n):
     global blue,white
     check_color=color_paper[x][y]
