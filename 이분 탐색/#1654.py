@@ -26,4 +26,3 @@ def binary_search(start, end, N):
         return binary_search(start, mid-1, N)
 
 print(binary_search(start, end, N))
-
