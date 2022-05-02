@@ -18,7 +18,8 @@ def cut(x,y,n):
     check_color=color_paper[x][y]
     for i in range(x,x+n):
         for j in range(y,y+n):
-            if check_color!=color_paper[i][j]:#하나라도 같은색이 아니라면
+            #하나라도 같은색이 아니라면
+            if check_color!=color_paper[i][j]:
                 #4등분
                 cut(x,y,n//2)#1사분면
                 cut(x,y+n//2,n//2)#2사분면
