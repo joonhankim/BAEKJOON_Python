@@ -21,7 +21,6 @@ for _ in range(n):
     # 오른쪽 힙에 원소를 넣는 차례에 왼쪽 힙보다 작은 값을 넣게 된다면,
     # 오른쪽 힙에 중간값보다 큰 원소가 들어가게 되므로
     # 왼쪽 힙의 첫번째 원소와 오른쪽 힙의 첫번째 원소를 교체하여 균형을 유지한다.
-    # 왼쪽 힙의 첫번쨰 요소와 오른쪽 힙의 첫번째 요소를 바꿔준다 -1을 곱해서
     if rightHeap and rightHeap[0] < -leftHeap[0]:
         leftValue = heapq.heappop(leftHeap)
         rightValue = heapq.heappop(rightHeap)
