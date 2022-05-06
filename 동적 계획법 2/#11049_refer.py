@@ -10,7 +10,7 @@ for _ in range(N):
 dp = [[0]*N for i in range(N)] 
 
 for i in range(1,N):
-    for j in range(0,N-i):
+    for j in range(N-i):
         if i == 1:
             dp[j][j+i]=matrix[j][0]*matrix[j][1]*matrix[j+i][1]
         else:
