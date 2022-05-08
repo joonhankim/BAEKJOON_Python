@@ -21,8 +21,9 @@ if __name__ == '__main__':
         parent_list_of_x = find_parent(parent_list, x)
         parent_list_of_y = find_parent(parent_list, y)
         
-        spot_of_x=len(parent_list_of_x)-1
-        spot_of_y=len(parent_list_of_y)-1
+        spot_of_x = len(parent_list_of_x)-1
+        spot_of_y = len(parent_list_of_y)-1
+        
         while parent_list_of_x[spot_of_x] == parent_list_of_y[spot_of_y]:
             spot_of_x-=1
             spot_of_y-=1
