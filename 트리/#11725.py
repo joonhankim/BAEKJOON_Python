@@ -10,7 +10,7 @@ def dfs(start_node,matrix,visited_list):
 
 if __name__ == '__main__':
     n = int(sys.stdin.readline())
-
+    sys.setrecursionlimit(10**6)
     matrix = [[] for _ in range(n+1)]
 
     for i in range(n-1): 
