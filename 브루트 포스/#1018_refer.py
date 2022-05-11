@@ -14,6 +14,7 @@ if __name__ == '__main__':
             first_B = 0
             for x in range(i, i+8):
                 for y in range(j, j+8):
+
                     if (x+y) % 2 == 0:
                         if data[x][y] != 'W':
                             first_W += 1
@@ -27,6 +28,7 @@ if __name__ == '__main__':
                         
                         if data[x][y] != 'B':
                             first_W += 1
+           
             result.append(first_W)
             result.append(first_B)
 
